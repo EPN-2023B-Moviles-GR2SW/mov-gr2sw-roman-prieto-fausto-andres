@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "40958135593",
+    "project_id": "b2023-gr2sw-farp",
+    "storage_bucket": "b2023-gr2sw-farp.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:40958135593:android:063c8aee28c216db6cfb38",
+        "android_client_info": {
+          "package_name": "com.example.b2023gr2sw"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyC67L4h_CyhnkZFjKPTyuvlw3W_7zuJ1Bc"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
