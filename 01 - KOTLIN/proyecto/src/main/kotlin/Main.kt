@@ -51,6 +51,64 @@ fun main(){
     calcularSueldo(10.00, bonoEspecial = 20.00)
     calcularSueldo(bonoEspecial = 20.00, sueldo = 10.00, tasa = 14.00)
 
+    val sumaUno = Suma(1,1)
+    val sumaDos = Suma(null,1)
+    val sumaTres = Suma(1,null)
+
+}
+
+abstract class NumerosJava{
+    protected val numeroUno: Int
+    private val numeroDos: Int
+    constructor(
+        uno: Int,
+        dos: Int
+    ) {//Bloque de codigo del constructor
+        this.numeroUno = uno
+        this.numeroDos = dos
+        println("Inicializando")
+    }
+}
+
+abstract class Numeros( //Constructor PRIMARIO
+    //Ejemplo
+    //uno: Int, (Parametro (sin modificar de acceso))
+    //private var uno: Int, //Propiedad Publica Clase numeros.uno
+    //var.uno: Int, //Propiedad de la clase (por defecto es Public)
+    //public var uno: Int,
+    protected val numeroUno: Int, //Propiedad de la clase protected  numeros.numeroUno
+    protected val numeroDos: Int, //Propiedad de la clase protected  numeros.numeroDos
+){
+    // var cedula:string = "" (public es por defecto)
+    // private valorCalculado: Int = 0 (private)
+    init {
+        this.numeroUno; this.numeroDos; //this es opcional
+        numeroUno; numeroDos;
+        println("Inicializacion");
+    }
+}
+
+class Suma(
+    unoParametro: Int, //Parametro
+    dosParametro: Int, //Parametro
+): Numeros(unoParametro, dosParametro){ //Extendiendo y mandando los parametros (super)
+    init { //Bloque codigo constructor primario
+        numeroDos; numeroUno;
+    }
+    constructor(
+        uno: Int?,
+        dos: Int
+    ):this(
+        if(uno == null) 0 else uno,
+        dos
+    )
+    constructor(
+        uno: Int,
+        dos: Int?
+    ): this(
+        uno,
+        if(dos == null) 0 else dos,
+    )
 }
 
 //void -> Unit
