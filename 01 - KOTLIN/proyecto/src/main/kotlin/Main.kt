@@ -54,6 +54,7 @@ fun main(){
     val sumaUno = Suma(1,1)
     val sumaDos = Suma(null,1)
     val sumaTres = Suma(1,null)
+    val sumaCuatro = Suma(null,null)
 
 }
 
@@ -91,6 +92,7 @@ abstract class Numeros( //Constructor PRIMARIO
 class Suma(
     unoParametro: Int, //Parametro
     dosParametro: Int, //Parametro
+
 ): Numeros(unoParametro, dosParametro){ //Extendiendo y mandando los parametros (super)
     init { //Bloque codigo constructor primario
         numeroDos; numeroUno;
@@ -109,6 +111,32 @@ class Suma(
         uno,
         if(dos == null) 0 else dos,
     )
+    constructor(
+        uno: Int?,
+        dos: Int?
+    ): this(
+        if(uno == null) 0 else uno,
+        if(dos == null) 0 else dos,
+
+    )
+    public fun sumar(): Int {
+        val total = numeroUno + numeroDos
+        // Suma.agregarHistorial
+        agregarHistorial(total)
+        return total
+    }
+    companion object { //Atributos y metodos Compartidos
+        //entre las instancias
+        val pi = 3.14
+        fun elevarAlCuadrado(num: Int): Int {
+            return num * num
+        }
+        val historialSumas = arrayListOf<Int>()
+        fun agregarHistorial(valorNuevaSuma:Int){
+            historialSumas.add(valorNuevaSuma)
+        }
+
+    }
 }
 
 //void -> Unit
