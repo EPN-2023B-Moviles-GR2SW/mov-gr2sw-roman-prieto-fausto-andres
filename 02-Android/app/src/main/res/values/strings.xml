@@ -1,4 +1,8 @@
 <resources>
     <string name="app_name">B2023gr2sw</string>
     <string name="title_activity_aresources">AResources</string>
+    <string name="saludo">Texto Por Defecto</string>
+    <color name="texto_color">#FF000000</color>
+    <color name="fondo_color">#FF000000</color>
+
 </resources>

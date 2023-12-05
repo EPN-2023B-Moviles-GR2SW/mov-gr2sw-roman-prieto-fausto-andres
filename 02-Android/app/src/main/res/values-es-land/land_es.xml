@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="saludo">ESPAÑOL LANDSCAPE3</string>
+    <color name="texto_color">#E6D00D</color>
+    <color name="fondo_color">#ED09E3</color>
+
+</resources>
