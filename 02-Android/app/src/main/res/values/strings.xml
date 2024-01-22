@@ -1,8 +1,10 @@
-<resources>
-    <string name="app_name">B2023gr2sw</string>
-    <string name="title_activity_aresources">AResources</string>
-    <string name="saludo">Texto Por Defecto</string>
-    <color name="texto_color">#FF000000</color>
-    <color name="fondo_color">#FF000000</color>
-
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <string name="app_name" tools:ignore="MissingTranslation">B2023gr2sw</string>
+    <string name="saludo">Buenos días</string>
+    <string-array name="string_array_opciones_dialogo">
+        <item>Lunes</item>
+        <item>Martes</item>
+        <item>Miercoles</item>
+    </string-array>
+    <string name="title_activity_google_maps_inicio">GoogleMapsInicio</string>
 </resources>

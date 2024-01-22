@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/menu_ver_empresa"
+        android:title="Ver Productos De La Empresa" />
+    <item
+        android:id="@+id/menu_editar_empresa"
+        android:title=" Editar Empresa" />
+    <item
+        android:id="@+id/menu_eliminar_empresa"
+        android:title="Eliminar Empresa" />
+</menu>

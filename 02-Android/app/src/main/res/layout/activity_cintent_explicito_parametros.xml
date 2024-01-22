@@ -2,21 +2,17 @@
 <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
-    android:id="@+id/btn_ciclo_vida"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@color/fondo_color">
+    tools:context=".CIntentExplicitoParametros">
 
-    <TextView
-        android:id="@+id/textView"
-        android:layout_width="118dp"
-        android:layout_height="54dp"
-        android:text="@string/saludo"
-        android:textColor="@color/texto_color"
+    <Button
+        android:id="@+id/btn_devolver_respuesta"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="DEVOLVER RESPUESTA"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.461"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
-
 </androidx.constraintlayout.widget.ConstraintLayout>
