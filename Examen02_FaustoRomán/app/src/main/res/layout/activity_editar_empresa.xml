@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Views.EditarEmpresa">
+
+    <com.google.android.material.textfield.TextInputEditText
+        android:id="@+id/input_Editar_Nombre_Empresa"
+        android:layout_width="295dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="24dp"
+        android:hint="Nuevo Nombre de la Empresa"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txt_Subtitulo_Editar" />
+
+    <com.google.android.material.textfield.TextInputEditText
+        android:id="@+id/input_Editar_Sector_Empresa"
+        android:layout_width="295dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="16dp"
+        android:hint="Nuevo Sector de la empresa"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/input_Editar_Anio_Empresa" />
+
+    <com.google.android.material.textfield.TextInputEditText
+        android:id="@+id/input_Editar_Anio_Empresa"
+        android:layout_width="295dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="24dp"
+        android:hint="Nuevo Año de Registro"
+        android:inputType="number"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/input_Editar_Ceo_Empresa" />
+
+    <Button
+        android:id="@+id/btn_Actualizar_Empresa"
+        android:layout_width="150dp"
+        android:layout_height="51dp"
+        android:backgroundTint="#4CAF50"
+        android:text="Actualizar"
+        android:textColor="#FFFFFF"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toTopOf="@+id/btn_Regresar_Editar_Empresa"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <Button
+        android:id="@+id/btn_Regresar_Editar_Empresa"
+        android:layout_width="150dp"
+        android:layout_height="51dp"
+        android:layout_marginBottom="52dp"
+        android:backgroundTint="#F44336"
+        android:text="Regresar"
+        android:textColor="#FFFFFF"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/txt_Editar_Empresa"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="28dp"
+        android:text="Editar Empresa"
+        android:textSize="25sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/txt_Subtitulo_Editar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="12dp"
+        android:text="Ingresa los Nuevos Datos"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txt_Editar_Empresa" />
+
+    <com.google.android.material.textfield.TextInputEditText
+        android:id="@+id/input_Editar_Ceo_Empresa"
+        android:layout_width="295dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="16dp"
+        android:hint="Nuevo Ceo de la Empresa"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/input_Editar_Nombre_Empresa" />
+</androidx.constraintlayout.widget.ConstraintLayout>

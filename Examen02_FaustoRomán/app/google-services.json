@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "358138332620",
+    "project_id": "examen-con-sqlite",
+    "storage_bucket": "examen-con-sqlite.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:358138332620:android:2cc633c98af60c3219c969",
+        "android_client_info": {
+          "package_name": "com.example.examen_con_sqlite"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAihzUhgnQZWpa3lRl_W7qFc3YmpTYMS2s"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
